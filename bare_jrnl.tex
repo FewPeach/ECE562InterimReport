@@ -357,7 +357,7 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Bare Demo of IEEEtran.cls\\ for IEEE Journals}
+\title{HDL Memory System Implementation\\ With Visualizing Software}
 %
 %
 % author names and IEEE memberships
@@ -369,14 +369,8 @@
 % was not built to handle multiple paragraphs
 %
 
-\author{Michael~Shell,~\IEEEmembership{Member,~IEEE,}
-        John~Doe,~\IEEEmembership{Fellow,~OSA,}
-        and~Jane~Doe,~\IEEEmembership{Life~Fellow,~IEEE}% <-this % stops a space
-\thanks{M. Shell was with the Department
-of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta,
-GA, 30332 USA e-mail: (see http://www.michaelshell.org/contact.html).}% <-this % stops a space
-\thanks{J. Doe and J. Doe are with Anonymous University.}% <-this % stops a space
-\thanks{Manuscript received April 19, 2005; revised August 26, 2015.}}
+\author{Joe~Collins, Gwendolyn~J.~Davis, M.~Phil~Lowney, Robert~Mushrall~III, and James~Rodriguez}% <-this % stops a space
+%\thanks{Not necessary}}% <-this % stops a space 
 
 % note the % following the last \IEEEmembership and also \thanks - 
 % these prevent an unwanted space from occurring between the last author name
@@ -399,7 +393,7 @@ GA, 30332 USA e-mail: (see http://www.michaelshell.org/contact.html).}% <-this %
 
 
 % The paper headers
-\markboth{Journal of \LaTeX\ Class Files,~Vol.~14, No.~8, August~2015}%
+\markboth{ECE-562: Advanced Computer Architecture, March~2017}%
 {Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for IEEE Journals}
 % The only time the second header will appear is for the odd numbered pages
 % after the title page when using the twoside option.
@@ -409,16 +403,11 @@ GA, 30332 USA e-mail: (see http://www.michaelshell.org/contact.html).}% <-this %
 % You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
 % you desire.
 
-
-
-
 % If you want to put a publisher's ID mark on the page you can do it like
 % this:
 %\IEEEpubid{0000--0000/00\$00.00~\copyright~2015 IEEE}
 % Remember, if you use this you must call \IEEEpubidadjcol in the second
 % column for its text to clear the IEEEpubid mark.
-
-
 
 % use for special paper notices
 %\IEEEspecialpapernotice{(Invited Paper)}
@@ -437,13 +426,8 @@ The abstract goes here.
 
 % Note that keywords are not normally used for peerreview papers.
 \begin{IEEEkeywords}
-IEEE, IEEEtran, journal, \LaTeX, paper, template.
+FPGA, Virtual Memory, Serial Communications.
 \end{IEEEkeywords}
-
-
-
-
-
 
 % For peer review papers, you can put extra information on the cover
 % page as needed:
@@ -484,14 +468,27 @@ I wish you the best of success.
  
 \hfill August 26, 2015
 
-\subsection{Subsection Heading Here}
-Subsection text here.
+\subsection{Background}
+Talk about virtual memory and how the easiest way to understand it is through graphics. Blah blah blah, creat in software b/c masochists and we wanted to be the cool overachieving group. Then realized that doing anything other than benchmarking or working on a 30 year old algorithm means you are a boss.
 
 % needed in second column of first page if using \IEEEpubid
 %\IEEEpubidadjcol
 
-\subsubsection{Subsubsection Heading Here}
-Subsubsection text here.
+\subsection{Limitations of Current Technology}
+Does this section apply to our project? I think its stupid and we should talk about something else. May want to try it for the interim report and see if he says he wants this section in after all.
+
+\subsection{Scope and Limitations of Project}
+If we make the scope really tiny then it isn't easy to break.
+
+\section{Discussion}
+\textit{"Describe the actual work performed during the project, including investigation, survey, development, simulation, or experimentation you conducted. They are the body of your report."} \textbf{-Dr. Wang's report guidelines}
+
+\subsection{Hardware Development}
+
+\subsection{Software Development}
+
+\section{Results}
+Make some noice pictures of the software. Talk about sample starting file and how it worked out. I don't think he will mind if some parts are wonky as long as we document them. Just make sure that our demo matches what we write here.
 
 
 % An example of a floating figure using the graphicx package.
@@ -594,7 +591,8 @@ Subsubsection text here.
 \section{Conclusion}
 The conclusion goes here.
 
-
+\section{Future Work}
+Bring up cache and flash memory. The virtualizer will probably be able to work with those with a bit of tweaking, just need more hardware design. Could also do multiple levels of virtual memory, but depending on how graphics are made, may be harder. Yak up our glorious project as a "teaching tool" for earlier courses.
 
 
 
@@ -614,13 +612,13 @@ The conclusion goes here.
 
 
 \appendices
-\section{Proof of the First Zonklar Equation}
-Appendix one text goes here.
+\section{Meeting Minues}
+Copy that shit over from the drive. Make it pretty.
 
 % you can choose not to have a title for an appendix
 % if you want by leaving the argument blank
-\section{}
-Appendix two text goes here.
+\section{Project Timeline}
+Make the gantt chart into a pic and put in.
 
 
 % use section* for acknowledgment
@@ -663,6 +661,7 @@ The authors would like to thank...
 \begin{thebibliography}{1}
 
 \bibitem{IEEEhowto:kopka}
+%probably want to keep this reference in when you think about it
 H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
   0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
 
@@ -679,22 +678,22 @@ H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
 %\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
 % or if you just want to reserve a space for a photo:
 
-\begin{IEEEbiography}{Michael Shell}
-Biography text here.
-\end{IEEEbiography}
+%\begin{IEEEbiography}{Michael Shell}
+%Biography text here.
+%\end{IEEEbiography}
 
 % if you will not have a photo at all:
-\begin{IEEEbiographynophoto}{John Doe}
-Biography text here.
-\end{IEEEbiographynophoto}
+%\begin{IEEEbiographynophoto}{John Doe}
+%Biography text here.
+%\end{IEEEbiographynophoto}
 
 % insert where needed to balance the two columns on the last page with
 % biographies
 %\newpage
 
-\begin{IEEEbiographynophoto}{Jane Doe}
-Biography text here.
-\end{IEEEbiographynophoto}
+%\begin{IEEEbiographynophoto}{Jane Doe}
+%Biography text here.
+%\end{IEEEbiographynophoto}
 
 % You can push biographies down or up by placing
 % a \vfill before or after them. The appropriate
